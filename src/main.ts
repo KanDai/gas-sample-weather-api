@@ -1,6 +1,5 @@
-const getWeather = () => {
+const getWeather = (cityId: string) => {
   const apiBaseUrl = 'https://weather.tsukumijima.net/api/forecast/city/'
-  const cityId = '130010'
   const apiRequestUrl = `${apiBaseUrl}${cityId}`
   const options: GoogleAppsScript.URL_Fetch.URLFetchRequestOptions = {
     method: 'get',
@@ -29,6 +28,6 @@ const updateSheet = (weather: any) => {
 }
 
 const main = () => {
-  const weather = getWeather()
+  const weather = getWeather('130010')
   updateSheet(weather)
 }
