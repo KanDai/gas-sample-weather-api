@@ -1,11 +1,3 @@
-Google Apps Script development environment using [clasp](https://github.com/google/clasp#create)
+GASでAPIから情報を取得してスプレッドシートに記載するサンプル
 
-## Hou to use
-
-```
-npm install
-```
-
-```
-npm run init -title="YOUR_SCRIPT_NAME"
-```
+利用しているAPI: https://weather.tsukumijima.net/
